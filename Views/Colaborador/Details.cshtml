@@ -1,0 +1,49 @@
+﻿@model AtividadeCibergestion.Models.Colaborador
+
+@{
+    ViewBag.Title = "Details";
+}
+
+    <h2>Detalhes</h2>
+
+<div>
+    <h4>Colaborador</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeColaborador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeColaborador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefoneColaborador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefoneColaborador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoTelefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoTelefone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Voltar para Lista", "Index")
+</p>
